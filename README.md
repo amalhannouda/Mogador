@@ -1,1 +1,1 @@
-https://github.com/amalhannouda/Mogador.git
+https://amalhannouda.github.io/Mogador/
