@@ -1,0 +1,153 @@
+
+body {
+  margin: 20px;
+  font: italic 1.2em "Fira Sans", serif;
+  padding: 10px;
+  scroll-behavior: smooth;
+  scroll-color: green;
+ }
+p {
+  text-align: justify;
+  text-indent: 6%;
+}
+br.a { 
+  text-indent: 6%;
+}
+.scroller {
+  height: 250px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 40px;
+  scroll-margin: 20px;
+  scrollbar-color: #77ACF1 ;
+  cursor: crosshair;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left:40px;
+  margin-right: 40px;
+}
+h1 {
+  text-align:center;
+  color: #04009A;
+  font-family:Roboto;
+  word-spacing:15px; 
+  text-decoration:overline;
+  text-decoration-color: #77ACF1; 
+}
+h2, h4 {
+  text-align: center;
+  color: #04009A;
+  line-height: 100px;
+  margin: 0;
+  background: #F0EBCC;
+  height: 100px;
+  font-size: 250%;
+}
+article {
+  padding: 10px;
+  margin: 10px;
+  background: #3EDBF0;
+}
+div{
+  display: flex;
+  justify-content: center;
+}    
+.wrapper {
+  position: relative;
+}
+.boite-tirets {
+  position: relative;
+  z-index: 1;
+  border: 10px double gold;
+  height: 6em;
+  width: 100%;
+  margin-bottom: 0.6em;
+  margin-top: 0.5em;
+  font-size: 200%;
+}
+.boite-doree {
+  position: absolute;
+  z-index: 2;
+  background: gold;
+  width: 80%;
+  left: 20%;
+  top: 70%;
+  text-align: center;
+  font-size: 150%;
+  color: #04009A;
+}
+.animate {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+     -225deg,
+     #231557 0%,
+     #44107a 29%,
+     #ff1361 67%,
+     #fff800 100%
+     );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  font-size: 250%;
+}
+@keyframes textclip {
+  to {
+     background-position: 200% center;
+  }
+}
+.fin {
+  writing-mode: horizontal-tb;	
+  border: 10px dashed #D8AC9C;
+  border-block-start-color: #EFD9D1;
+  padding:10px;
+  font: italic small-caps bold 16px/2 cursive;
+  font-variant: small-caps;
+}
+#gradient {
+  border: 20px solid;
+  border-image: linear-gradient(#77ACF1, #04009A)5;	
+  padding:5px;
+}
+.ombre {
+  box-shadow: 5px 5px 5px #150E56;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}    
+.plus {
+  cursor: crosshair;
+}
+.zoom {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+#clock {
+  background-color: #e8ffff;
+  color: black;
+  border: 2px solid #009dff;
+  border-radius: 4px;
+  font-size: 150%;
+  font-family: sans-serif;
+}
+#submitForm {
+  width: 50%;
+  background-color: #0a3864;
+  color: white;
+  font-size: 120%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+#submitForm:hover {
+  background-color: #105496;
+}
+#textareaOpinion{
+width: 50%;
+}

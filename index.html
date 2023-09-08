@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/grid.css">
+    <title>ESSAOUIRA</title>
+    <script>
+	  "use strict";
+	  
+	  function getRealTime() {
+	      const REAL_TIME = new Date();
+		  document.getElementById("clock").innerHTML = REAL_TIME.toLocaleTimeString();
+	  }
+	  setInterval(getRealTime, 1000);
+	  function printResult() {
+	      let CHECK_YES = document.getElementById("yes");
+		  let CHECK_NO = document.getElementById("no");
+          let SELECTED_VALUE = " ";
+          if (CHECK_YES.checked === true){
+		     SELECTED_VALUE =  "Yes";
+		  }
+		  if (CHECK_NO.checked === true){
+			 SELECTED_VALUE =  "No";
+		 }
+	     let result = {
+                "site": document.getElementById("selectSite").value,
+                "sport": document.getElementById("selectSport").value,
+				"Music":SELECTED_VALUE,
+	            "opinion": document.getElementById("textareaOpinion").value
+         }
+		 let jsonResult = JSON.stringify(result);
+		 document.getElementById("printResult").innerHTML =  document.getElementById("printResult").innerText+" "+jsonResult;
+		 document.getElementById("myForm").reset(); 
+		 CHECK_YES.checked = false; 
+		 CHECK_NO.checked = false; 
+	 }
+    </script>
+</head>
+
+<body>
+    <div id="gradient"  class="zoom" style=" display: flex; filter: contrast(150%);">
+        <img src="img/essaouira 2.jpg" alt="Essaouira city"  style="width:25%;"/>
+		<img src="img/essaouira 1.jpg" alt="Essaouira city"  style="width:25%;"/>
+		<img src="img/essaouira 3.jpg" alt="Essaouira city"  style="width:25%;"/>
+		<img src="img/sunset 2.jpg" alt="Essaouira city"  style="width:25%;"/>
+    </div>
+    <div class="wrapper">
+	    <div class="boite-tirets"><h1 class="animate"  style="text-align: center; word-spacing:15px; text-decoration:overline; text-decoration-color: #77ACF1;">ESSAOUIRA - MOROCCO</h1></div>
+		<div class="boite-doree">The well-drawn city on the edge of the Atlantic Ocean</div>
+    </div>
+    <p id="clock"> </p>
+    <p class="scroller" style="background:#fffcf1;"> 
+		Essaouira is <b><span style="color:#009800;">a port city on the edge of the Atlantic Ocean</span></b> with a population of around 77,966. Between 1912 and 1956 (period of the French protectorate of Morocco), it was called <b>"Mogador"</b>, a name derived from the regional <u>saint Sidi Mogdoul</u>. and after the independence of Morocco in 1957, the name of the city was changed to Essaouira which means <b><span style="color:#009800;">the castle immured by a wall</span></b>.
+		<br>&nbsp;&nbsp;&nbsp;Essaouira has a very beautiful and diverse nature, located particularly on the <b>islet of Mogador</b>, and the areas around the city. In 1980 the islet of Mogador was designated a<b> biological reserve</b>. It is a natural and ornithological site of which it is home to several species of birds such as gulls, great cormorants, grouse and crows, in addition between April and October 700 very rare pairs of Eleonore hawks come to reproduce there before leaving for Madagascar.
+		<br>&nbsp;&nbsp;&nbsp;The city of Essaouira is also distinguished by <b><span style="color:#009800;">the argan tree</span></b>. Only found in Morocco, it also is the city's main plant wealth and occupies a very important position in the region due to its ecological, social and economic role. In fact, the tree provides environmental, cosmetic and physiological benefits, and produces argan oil that is popular all over the world due to its use in <b>cosmetics</b>.
+		<br>&nbsp;&nbsp;&nbsp;The city also has <b>a mild climate</b> that makes it more wonderful, as it is very similar to the climate of the southern California coast, such as Los Angeles and San Diego. in short, its climate is pleasant throughout the year with very mild and slightly rainy winters and pleasantly hot and dry summers with no excessive heat because the ocean is very cool.
+		<br>&nbsp;&nbsp;&nbsp;Due to its geographical location and its natural and cultural wealth, it is considered one of <b><span style="color:#009800;">the most important tourist cities in Morocco</span></b>. Indeed, since the end of the 20th century, Essaouira has experienced a spectacular renaissance due mainly to tourism and the medina of Essaouira has been listed as a<b><span style="color:#009800;"> UNESCO World Heritage Site since 2001</span></b>.
+    </p>
+    <h2>Archaeological and tourist sites</h2>
+    <section>
+        <article style="background:#E7E6E1;">
+            <h3 style="text-decoration: #150E56 wavy underline;">SKALA</h3>
+            <p class="plus"> Essaouira's "Skala" walls were erected in the 18th century to protect the city from foreign invasions. It is a perimeter around the Medina designed by the French architect Theodore Cornut, chosen by Sultan Muhammad bin Abdullah, and inspired by the fortifications of Saint Malo.<br>&nbsp;&nbsp;&nbsp;Skala is also one of the best spots to watch the sunset. You can see the shadows of birds and the orange light of the sunset reflecting off the fences and cannons. </p>
+            <div class="img/ombre" style="display: flex; filter: contrast(150%);">
+                <img src="img/skala 2.jpg" alt="place in the city of essaouira which is called Skala" style="width:30%; hight:200px;"/>
+                <img src="img/skala.jpg" alt="place in the city of essaouira which is called Skala" style="width:40%; hight:200px;"/>
+                <img src="img/sunset 1.jpg" alt="place in the city of essaouira which is called Skala"  style="width:30%; hight:200px;"/>
+            </div>
+        </article>
+        <article style="background:#F7F6E7;">
+            <h3 style="text-decoration: #150E56 wavy underline;">PORT</h3>
+            <p class="plus"> The port of Essaouira is a must if you are going to visit Essaouira. Formerly known as the “port of Timbuktu”. It is one of the three most important sardine ports in Morocco. It is the busiest place in town, especially in the early afternoon. The fishing boats return and unload their catch of the day. Sea bream, sardines and other crustaceans are then sold at the Fish Market, in a cacophonous atmosphere of course, but all in all organized. A few steps away, eateries cook these fresh products for instant tasting.</p>
+            <div class="ombre" style="display: flex">
+                <img src="img/port 1.jpg" alt="The port of Essaouira " style="width:30%; hight:200px;"/>
+                <img src="img/port 2.jpg" alt="The port of Essaouira " style="width:40%; hight:200px;"/>
+                <img src="img/port 3.jpg" alt="The port of Essaouira " style="width:30%; hight:200px;"/>
+            </div>
+        </article>
+        <article style="background:#F2A154;">
+            <h3 style="text-decoration: #150E56 wavy underline;">SOUK</h3>
+            <p class="plus"> Essaouira's souk is a real treasure trove of souvenirs, as it is located along the narrow and bright streets of the city and you can find a variety of products such as traditional clothing, jewelry, textiles, spices and many more... </p>
+            <div class="ombre" style="display: flex; ">
+                <img src="img/souk 3.jpg" alt="traditional products market" style="width:30%; hight:200px;"/>
+                <img src="img/spice.jpg" alt="traditional products market" style="width:40%; hight:200x;"/>
+                <img src="img/bijoux.jpg" alt="traditional products market" style="width:30%; hight:200px;"/>
+            </div>
+        </article>
+        <article  style="background:#314E52;">
+            <h3 style="text-decoration: #150E56 wavy underline;">Women's Argan oil production cooperatives</h3>
+            <p class="plus"> A few kilometers from Essaouira, you will find cooperatives managed by women who work the fruit of the argan tree to produce certified organic edible or cosmetic oil. You will meet the workers who will explain all the manufacturing process to you. You will learn in particular that it takes 35 kilograms of dried fruit and 20 hours of work to produce one liter of Argan oil.</p>
+            <div class="ombre" style="display: flex">
+                <img src="img/arganol.jpg" alt="Women's Argan oil production cooperatives" style="width:30%; hight:200px;"/>
+                <img src="img/argan.jpg" alt="Women's Argan oil production cooperatives" style="width:40%; hight:200px;"/>
+                <img src="img/argan 1.jpg" alt="Women's Argan oil production cooperatives" style="width:30%; hight:200px;"/>
+            </div>
+        </article>
+    </section>
+    <h2>Music and Sport</h2>
+    <section style="display: flex;">
+        <article style="background:#CDF0EA;">
+            <h3 style="text-decoration: #150E56 wavy underline;">The Gnaoua and World Music Festival</h3>
+            <p class="plus">Every year, at the end of June, the Gnaoua and World Music Festival is a real springboard for the Gnaoua musical genre. it offers four nights of musical, artistic and cultural shows on more than 6 large stages spread over the medina of Essaouira.<br>&nbsp;&nbsp;&nbsp;Guests will be able to enjoy contemporary funk, blues, jazz, reggae and soul performances from Africa and beyond.</p>
+            <p><iframe width="90%" height="200px" src="https://www.youtube.com/embed/RW6rLOFz4kg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <a href="https://www.festival-gnaoua.net/en/accueil" target="_blamk;">For more information about Festival click here</a>
+        </article>
+        <article style="background:#BEAEE2;">
+            <h3 style="text-decoration: #150E56 wavy underline;">Nautical sports: Surfing, Kitesurfing and Windsurfing</h3>
+            <p class="plus">The beaches of Essaouira are privileged places for nautical sports because of the winds which blow there all year round and which create beautiful waves. you will also find on the seafront rental shops for jet skis, surfboards, windsurfing and kitesurfing equipment. even if you have never practiced, you can take lessons from local experts, they offer courses for all levels, from beginners to more advanced.</p>
+            <div style="display: flex">
+                <img src="img/surf.jpg" alt="Nautical sports" style="width:30%; hight:300px;"/>
+                <img src="img/kitesurf.jpg" alt="Nautical sports" style="width:40%; hight:300px;"/>
+                <img src="img/plage.jpg" alt="Essaouira beach" style="width:30%; hight:300px;"/>
+            </div>
+        </article>
+    </section>
+    <h2>Your Opinion Matters</h2>
+    <section style="display: flex; flex-direction:row; flex-wrap: wrap;">
+        <article style="flex: 100%; background:hsla(0,100%,90%,0.3); text-align: center;">
+    		<form id="myForm" name="myForm" action="/send" method="post">
+	    	<label for="selectSite">
+                Archaeological and tourist sites:
+                <select id="selectSite" name="site" required>
+    		        <option value="" selected disabled hidden></option>
+                    <option>SKALA</option>
+                    <option>PORT</option>
+                    <option>SOUK</option>
+			        <option>Women's Argan oil production cooperatives</option>
+                </select>
+            </label>
+		    <br>
+            <br>
+    	    <label for="selectSport">
+                Nautical sports:
+                <select id="selectSport" name="sport" required>
+	    	        <option value="" selected disabled hidden></option>
+                    <option>Surfing</option>
+                    <option>kitesurfing</option>
+                    <option>windsurfing</option>
+                </select>
+	        </label>
+	        <br>
+            <br>
+	        <label for="selectMusic">
+                Have you ever heard Gnaoua Music before?
+	    	    <checkbox id="fieldSet" name="music" required>
+	    		    <input type="radio" id="yes" name="drone" value="Yes"> Yes
+		    		<input type="radio" id="no" name="drone" value="No"> No
+	    		</checkbox>
+    		</label>
+    	    <br>
+            <br>
+    	    <label for="textAreaOpinion">
+	    	    What do you think of the page? Any suggestions to improve it?
+	    	    <br>
+	    	    <textarea id="textareaOpinion" cols="50" rows="10"></textarea>
+            </label>
+	        <br>
+            <br>
+	        </form>
+        	<label for="submitWithLabel">
+                <input id="submitForm" type="submit" value="Submit" onclick="printResult()">
+            </label>
+	        </br>
+	        </br>
+			<p id="printResult"></p>			
+        </article>
+    </section>
+    <hr>
+    <p class="fin">If you want to explore and know more about this charming and beautiful Moroccan city, do not hesitate to visit this site <a href="https://www.visitmorocco.com/en/travel/essaouira-mogador" target="_blamk;">'visitmorocco'</a></p>
+</body>
+</html>
